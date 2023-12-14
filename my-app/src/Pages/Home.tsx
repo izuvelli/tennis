@@ -4,12 +4,12 @@ type Props = {}
 
 type State = {}
 
-export default class Steg3 extends Component<Props, State> {
+export default class Home extends Component<Props, State> {
   state = {}
 
   render() {
     return (
-      <div>Steg3</div>
+      <div>Home</div>
     )
   }
 }

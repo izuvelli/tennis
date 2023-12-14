@@ -1,13 +1,13 @@
 import React from 'react';
-import BookCourt from './components/Bookingform'; // Update the path based on your project structure
-import Steg1 from './Pages/Steg1';
+import Booking1 from './components/Booking1';
+import Booking2 from './components/Booking2';
 
 const App: React.FC = () => {
   return (
     <div>
-      <h1>Your App</h1>
-      <BookCourt />
-      <Steg1 />
+      <h1>Världens Bästa Tennis Klubb</h1>
+      <center><Booking1 /></center>
+      <center><Booking2 /></center>
     </div>
   );
 };
