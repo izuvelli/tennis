@@ -9,7 +9,7 @@ export default class Home extends Component<Props, State> {
 
   render() {
     return (
-      <div>Home</div>
+      <div className=''>Home</div>
     )
   }
 }
