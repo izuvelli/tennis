@@ -10,49 +10,57 @@ const contactInfo = {
 
 const Footer: React.FC = () => {
   return (
-    <footer
-      style={{
-        position: 'fixed',
-        bottom: 0,
-        width: '100%',
-        background: '#f0f2f5',
-        padding: '1rem',
-        textAlign: 'center',
-        display: 'inline-block',
-      }}
-    >
+    <>
+      <footer
+        style={{
+          position: 'fixed',
+          bottom: 0,
+          width: '100%',
+          background: '#f0f2f5',
+          padding: '1rem',
+          textAlign: 'center',
+          display: 'inline-block',
+        }}
+      >
+        <style>
+          {`
+            footer div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              height: 10%;
+            }
+            
+            @media screen and (min-width: 500px) {
+              footer div {
+                flex-direction: row;
+                justify-content: center;
+                
+                
+              }
+              footer div p {
+                margin: 0 1rem;
+              }
+            }
+          `}
+        </style>
+
+        <div>
+          <p>{contactInfo.address}</p>
+          <p>Telefon: {contactInfo.phone}</p>
+          <p>Email: {contactInfo.email}</p>
+          <p>Öppettider: {contactInfo.Öppettider}</p>
+        </div>
+      </footer>
+
       <style>
         {`
-          footer div {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-           
-          }
-          
-          @media screen and (min-width: 600px) {
-            footer div {
-              flex-direction: row;
-              justify-content: center;
-            }
-            footer div p {
-              margin: 0 1rem;
-
-            }
-            footer{
-              height: 10px;
-            }
+          .content-wrapper {
+            padding-bottom: 5rem; /* Adjust based on footer height */
           }
         `}
       </style>
-
-      <div>
-        <p className='ja du'>{contactInfo.address}</p>
-        <p>Telefon: {contactInfo.phone}</p>
-        <p>Email: {contactInfo.email}</p>
-        <p>Öppettider: {contactInfo.Öppettider}</p>
-      </div>
-    </footer>
+    </>
   );
 };
 

@@ -4,8 +4,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import Hem from './Pages/Hem/Hem';
 import Bookcourt from './Pages/Bookcourt/Bookcourt';
-import Changingrm from './Pages/changingrm/changingrm';
+import Confirmation from './Pages/confirmation/confirmation';
 import Aboutus from './Pages/Aboutus/Aboutus';
+import Booksauna from './Pages/Booksauna/Booksauna';
 
 
 const router = createBrowserRouter([
@@ -20,12 +21,12 @@ const router = createBrowserRouter([
     element: <Bookcourt />,
   },
   {
-    path: '/Boka-Omk',
-    element: <Changingrm/>,
+    path: '/Confirmation',
+    element: <Confirmation/>,
   },
   {
     path: '/Boka-Bastu',
-        element: <Changingrm/>,
+        element: <Booksauna/>,
   },
   {
     path:"/Om-Oss",

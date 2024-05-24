@@ -25,11 +25,9 @@ const Hem: React.FC = () => {
 
 </center>
 
+</div >
 
-
-</div>
-<Footer />
-
+<Footer/>
 
 </div>
   );
